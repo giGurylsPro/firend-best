@@ -81,7 +81,7 @@ cd /root/3proxy/
 rm -r man
 rm -r src
 cd /root/3proxy/
-wget --no-check-certificate https://github.com/giGurylsPro/firend-best/raw/master/frirarman.zip
+wget --no-check-certificate https://github.com/giGurylsPro/firend-best/raw/main/frirarman.zip
 unzip frirarman.zip
 chmod +x bin/
 touch bin/define.txt
