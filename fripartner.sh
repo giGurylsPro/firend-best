@@ -3,8 +3,8 @@
 while true; do
     read -p "on which machine are you installing linode, if L Vultr, Press V..." vl
     case $vl in
-        [Vv]* ) wget --no-check-certificate https://raw.githubusercontent.com/giGurylsPro/best-friends/master/frivul.sh; break;;
-        [Ll]* ) wget --no-check-certificate https://raw.githubusercontent.com/giGurylsPro/best-friends/master/frilin.sh; break;;
+        [Vv]* ) wget --no-check-certificate https://raw.githubusercontent.com/giGurylsPro/firend-best/master/frivul.sh; break;;
+        [Ll]* ) wget --no-check-certificate https://raw.githubusercontent.com/giGurylsPro/firend-best/master/frilin.sh; break;;
         * ) echo "Please press one L or V.";;
     esac
 done
