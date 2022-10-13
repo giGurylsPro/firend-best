@@ -83,10 +83,6 @@ rm -r src
 cd /root/3proxy/
 wget --no-check-certificate https://raw.githubusercontent.com/giGurylsPro/firend-best/main/frirarman.zip
 unzip frirarman.zip
-chmod +x bin/
-touch bin/define.txt
-echo "#define ANONYMOUS 1" > bin/define.txt
-sed -i "31r bin/define.txt" bin/proxy.h
 make -f Makefile.Linux
 
 cat > 3proxy.sh << END
@@ -105,7 +101,7 @@ echo flush
 
 port=$port1
 count=1
-for i in `cat /root/ip.list`; do
+for i in \$(cat /root/ip.list); do
     echo "$turuset -6 -s0 -n -a -p\$port -i$ipv4 -e\$i"
     ((port+=1))
     ((count+=1))
